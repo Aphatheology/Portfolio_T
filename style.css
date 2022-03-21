@@ -333,7 +333,12 @@ input[type=submit] {
     height: 40px;
     transition: 0.5s;
 }
-  
+
+.services svg {
+    width: 50px;
+    height: 50px;
+}
+
 @media screen and (max-width: 700px) {
     .lnav {
         padding: 25px 10px 10px;
