@@ -126,11 +126,16 @@ header {
     background-color: #f9320a;
     letter-spacing: 1px;
     cursor: pointer;
+    font-size: 15px;
 }
 
 .hero-btns-wrapper .download-btn {
     background-color: white;
     color: #f9320a;
+}
+
+.btn:hover {
+    font-weight: bold;
 }
 
 main {
@@ -249,6 +254,11 @@ main {
     justify-content: space-around;
 }
 
+label {
+    display: inline-block;
+    margin-top: 10px;
+}
+
 progress[value] {
     -webkit-appearance: none;
      appearance: none;
@@ -324,6 +334,62 @@ input[type=submit] {
     transition: 0.5s;
 }
   
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 700px) {
+    .lnav {
+        padding: 25px 10px 10px;
+    }
 
+    nav, ul, li, li a {
+        padding: 0;
+        margin: 0;
+        text-align: right;
+    }
+
+    .nav-links {
+        margin-right: 5px;
+
+    }
+
+    .hero-wrapper h2 , .hero-wrapper p {
+        text-align: center;
+    }
+
+    .hero-btns-wrapper .btn {
+        padding: 10px 20px;
+    }
+
+    .about-me {
+        width: 90%;
+    }
+
+    .section h2 {
+        margin: 0px 0px 15px;
+        font-size: 20px;
+    }
+
+    .place-work {
+        padding: 25px;
+    }
+
+    .place-work-pill {
+        display: inline-block;
+        padding: 10px 15px;
+        margin: 10px 5px;
+    }
+
+    .project {
+        width: 100vw;
+    }
+
+    .project-card, .service-card {
+        width: 100%;
+    }
+
+    .contact form {
+        width: 90%;
+    }
+
+    input[type=submit] {
+        width: 50%;
+    }
 }
